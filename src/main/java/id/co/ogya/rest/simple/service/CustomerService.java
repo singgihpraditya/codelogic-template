@@ -40,7 +40,7 @@ public class CustomerService {
 		}
 		SimpleRestResponse<InquiryCustomerOutputSchema> inquiryCustomerResponse = customerOpenFeign.getResponse(UUID.randomUUID().toString().replace("-", ""), customer.getId());
 		InquiryCustomerOutputSchema inquiryCustomerOutputSchema = inquiryCustomerResponse.getOutputSchema();
-		if(!inquiryCustomerResponse.getErrorSchema().getErrorCode().equals("BCA-0-000")) {
+		if(!inquiryCustomerResponse.getErrorSchema().getErrorCode().equals("INQ-0-000")) {
 			log.debug(hashCode+"No data found");
 			return responseUtils.generateFailedResult(outputSchema, new Exception("No Data Found"), HttpStatus.NOT_FOUND.value());
 		}

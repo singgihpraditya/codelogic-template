@@ -14,7 +14,7 @@ import id.co.ogya.rest.simple.service.CustomerService;
 import id.co.ogya.rest.simple.util.Utils;
 
 @RestController
-public class CustomerMaintenanceController {
+public class CustomerController {
 
 	@Autowired
 	private CustomerService customerService;
