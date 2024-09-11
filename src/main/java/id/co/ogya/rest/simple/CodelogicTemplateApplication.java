@@ -9,9 +9,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 @ComponentScan({"id.co.ogya.rest.*"})
 @SpringBootApplication
-public class SimpleRestJPAApplication {
+public class CodelogicTemplateApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(SimpleRestJPAApplication.class, args);
+		SpringApplication.run(CodelogicTemplateApplication.class, args);
 	}
 
 }

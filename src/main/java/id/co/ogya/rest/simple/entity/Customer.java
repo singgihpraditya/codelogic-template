@@ -24,4 +24,5 @@ public class Customer {
 	private String email;
 	@Column(name = "CREATED_DATE")
 	private Date date;
+	private String description;
 }

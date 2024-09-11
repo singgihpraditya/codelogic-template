@@ -2,6 +2,7 @@ package id.co.ogya.rest.simple.service;
 
 import java.util.UUID;
 
+import id.co.ogya.lib.CommonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -48,6 +49,7 @@ public class CustomerService {
 		customerResponse.setDate(customer.getDate());
 		customerResponse.setEmail(customer.getEmail());
 		customerResponse.setId(customer.getId());
+		customerResponse.setGeneratedId(new CommonUtils().getLongGeneratedId());
 		customerResponse.setAddress(inquiryCustomerOutputSchema.getAddress());
 		outputSchema.setCustomer(customerResponse);
 		
