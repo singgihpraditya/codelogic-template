@@ -21,7 +21,7 @@ public class CustomerMaintenanceController {
 
 	@RequestMapping(value = "/consumer/inquiry", method = RequestMethod.POST)
 	public ResponseEntity inquiry(@Valid @RequestBody(required = true) CustomerRequest customerRequest) {
-		String hashCode = Utils.getHashCodeNumber() + "-INQUIRY-DATA-";
+		String hashCode = Utils.getHashCodeNumber() + "-INQUIRY-CUSTOMER-";
 		return customerService.list(hashCode, customerRequest);
 	}
 }
