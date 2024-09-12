@@ -12,4 +12,5 @@ public class CustomerResponse {
 	private String email;
 	private String address;
 	private Date date;
+	private Purchase purchase;
 }
