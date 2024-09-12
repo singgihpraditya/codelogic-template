@@ -57,7 +57,7 @@ public class CustomerService {
 		customerResponse.setAddress(inquiryCustomerOutputSchema.getAddress());
 
 		SimpleRestResponse<InquiryCustomerPurcaseOutputSchema> inquiryCustomerPurcaseResponse = purcaseRestService.getCustomerPurchase(customer.getId());
-		if(inquiryCustomerPurcaseResponse.getErrorSchema().getErrorCode().equals("INQ-0-000")) {
+		if(inquiryCustomerPurcaseResponse.getErrorSchema().getErrorCode().equals("PUR-0-000")) {
 			InquiryCustomerPurcaseOutputSchema inquiryCustomerPurcaseOutputSchema = inquiryCustomerPurcaseResponse.getOutputSchema();
 			Purchase purchase = new Purchase();
 			purchase.setQuantity(inquiryCustomerPurcaseOutputSchema.getQuantity());
