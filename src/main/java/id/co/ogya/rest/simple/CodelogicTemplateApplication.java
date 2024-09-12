@@ -11,6 +11,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 public class CodelogicTemplateApplication {
 	public static void main(String[] args) {
+		//Something
 		SpringApplication.run(CodelogicTemplateApplication.class, args);
 	}
 
