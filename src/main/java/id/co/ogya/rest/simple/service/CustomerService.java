@@ -66,7 +66,6 @@ public class CustomerService {
 			customerResponse.setPurchase(purchase);
 		}
 
-
 		outputSchema.setCustomer(customerResponse);
 		
 		log.debug(hashCode + "Get data done");
